@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:followUp xmlns:skills="http://www.example.org/skills" xmlns:tns="http://www.example.org/StaffSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/StaffSchema StaffSchema.xsd ">
+  <tns:staffData>
+    <tns:name>tns:name</tns:name>
+    <tns:age>tns:age</tns:age>
+    <tns:position>tns:position</tns:position>
+    <tns:salary>tns:salary</tns:salary>
+    <tns:skills>
+      <skills:id>skills:id</skills:id>
+      <skills:skillName>skills:skillName</skills:skillName>
+    </tns:skills>
+  </tns:staffData>
+</tns:followUp>

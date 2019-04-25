@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:followUp xmlns:tns="http://www.example.org/StaffSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/StaffSchema StaffSchema.xsd ">
+  <tns:staffData>
+    <tns:name>vivek</tns:name>
+    <tns:age>35</tns:age>
+    <tns:position>Quater Back</tns:position>
+    <tns:salary>100,000</tns:salary>
+    <tns:skills>Running to the Base</tns:skills>
+    <tns:skills>Running to the Base 2</tns:skills>
+  </tns:staffData>
+</tns:followUp>

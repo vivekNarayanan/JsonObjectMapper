@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.example.org/StaffSchema"
+	xmlns:tns="http://www.example.org/StaffSchema"
+	xmlns:skills="http://www.example.org/skills"
+	elementFormDefault="qualified">
+	<import schemaLocation="skills.xsd" namespace="http://www.example.org/skills"/>
+	<element name="followUp">
+		<complexType>
+			<sequence>
+				<element name="staffData" type="tns:staff" minOccurs="1"
+					maxOccurs="unbounded" />
+			</sequence>
+		</complexType>
+	</element>
+	<complexType name="staff">
+		<sequence>
+			<element name="name" type="string"/>
+			<element name="age" type="string"/>
+			<element name="position" type="string"/>
+			<element name="salary" type="string" minOccurs="1" />
+			<element name="skills" type="skills:skill" minOccurs="1" maxOccurs="unbounded"/>
+		</sequence>
+	</complexType>
+</schema>

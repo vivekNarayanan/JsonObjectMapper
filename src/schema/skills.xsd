@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/skills"
+	xmlns:skills="http://www.example.org/skills" elementFormDefault="qualified">
+	<complexType name="skill">
+		<sequence>
+			<element name="id" type="string" />
+			<element name="skillName" type="string" />
+		</sequence>
+	</complexType>
+	<complexType name="battingSkill">
+		<complexContent>
+			<extension base="skills:skill">
+				<sequence>
+					<element name="battingAvg" type="string" minOccurs="0" maxOccurs="1"/>
+					<element name="ballsFaced" type="string" minOccurs="0" maxOccurs="1"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="bowling">
+		<complexContent>
+			<extension base="skills:skill">
+				<sequence>
+					<element name="bowlingAvg" type="string" minOccurs="0" maxOccurs="1"/>
+					<element name="bowlingSpeed" type="string" minOccurs="0" maxOccurs="1"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+</schema>
